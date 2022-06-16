@@ -1,10 +1,6 @@
-from sys import modules
-
 import pytest
-from selene.support.shared import browser
 from selene import be, have
-
-from conftest import browser_settings
+from selene.support.shared import browser
 
 
 @pytest.fixture(scope='session', autouse=True)
