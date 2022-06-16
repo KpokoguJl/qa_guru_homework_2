@@ -9,13 +9,13 @@ from conftest import browser_settings
 
 @pytest.fixture(scope='session', autouse=True)
 def before_all(browser_settings):
-    print('Браузер сконфигурирован!')
+    print('\nБраузер сконфигурирован!')
 
 
 @pytest.fixture(autouse=True)
 def before_each(browser_settings):
     browser.open('/')
-    print('Открыта страницп!')
+    print('\nОткрыта страница!')
 
 
 def test_valid_search():
